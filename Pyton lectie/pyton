@@ -1,0 +1,4 @@
+# pyton lectie
+num1 = 34
+str1 = "care este numele tau."
+name = input (str1)

@@ -1,0 +1,192 @@
+/* Definire variabile css -acestea fiind reutilizabile */
+:root {
+    --orange: #ff6b0a;
+    --orange-light: #ff7757;
+    --white: #ffffff;
+    --grey: #172432;
+    --main-font: "Montserrat", sans-serif;
+    --secondary-font: "Playfair Display", sans-serif;
+    --tertiary-font: "Rubik", sans-serif;
+    --transparent-black: rgba(0, 0, 0, 0.3);
+    --dark-transparent-black: rgba(0, 0, 0, 0.5);
+}
+
+/* Heading style */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--secondary-font);
+}
+
+p {
+    font-family: var(--main-font);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Button reset style */
+button {
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+/* Header style */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    margin-bottom: -81px;
+}
+
+/* Hero section */
+.hero {
+    height: 100vh;
+    display: flex;
+    color: var(--white);
+    align-items: center;
+    justify-content: left;
+    background-image: linear-gradient(
+        var(--transparent-black),
+        var(--dark-transparent-black)
+    ), url("./images/hero-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.hero__title {
+    font-size: 84px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.hero__description {
+    font-size: 24px;
+    font-weight: 300; /* Modificat din font-family */
+    margin-bottom: 60px;
+}
+
+.hero__button {
+    font-size: 64px;
+    color: var(--white);
+    background-color: var(--orange-light);
+    border-radius: 12px;
+    padding: 10px 40px;
+}
+
+.hero__button:hover {
+    background-color: var(--orange);
+}
+
+/* Destinations section style */
+.destinations{
+    padding: 140px 8%;
+}
+
+
+.destinations__title {
+    font-size: 64px;
+    margin-bottom: 32px;
+    font-weight: 300;
+}
+
+.destinations__line {
+    max-width: 365px;
+    border: 1px solid var(--orange-light);
+    margin-bottom: 32px;
+}
+
+.destinations__description {
+    font-size: 24px;
+}
+
+
+.destinations__cards {
+    margin-top: 100px;
+    display: flex;
+    gap: 30px;
+    color: var(--white);
+}
+.destinations__card {
+    flex: 1;
+    min-width: 400px;
+    height: 660px;
+    background-color: red;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.destinations__card h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+.destinations__card div {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+.destinations__card p {
+    font-size: 24px;
+}
+.destinations__card--1 {
+    background-image: url(images/img1.jpg);
+}
+
+
+.destinations__card--2 {
+    background-image: url(images/img2.jpg);
+}
+
+
+.destinations__card--3 {
+    background-image: url(images/img3.jpg);
+}
+
+/* Footer section */
+.footer {
+    background-color: var(--grey);
+    padding: 150px 8%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+}
+.footer__logo p {
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+
+.footer h4 {
+    font-family: var(--main-font);
+    font-size: 24px;
+    margin-bottom: 16px;
+
+}
+
+.footer li {
+    margin-bottom: 12px;
+    font-family: var(--tertiary-font);
+
+}
+
+.footer__social div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
